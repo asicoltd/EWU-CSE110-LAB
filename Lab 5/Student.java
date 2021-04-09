@@ -3,17 +3,19 @@ package com.mycompany.lab5;
 import java.util.*;
 
 public class Student{
-    Scanner sc = new Scanner(System. in );
     private int studentId;
     private String studentName;
     private double studentCGPA;
-    
+
     // constractor
-    public void Student(){     
+    Student(){
+        
     }
-    public void Student( int studentId, String studentName, double studentCGPA){   
+    Student( int studentId, String studentName, double studentCGPA){
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.studentCGPA = studentCGPA;
     }
-    
     // ID
     public int getstudentId(){
         return studentId;
